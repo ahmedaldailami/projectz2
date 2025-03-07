@@ -22,7 +22,6 @@ html {
 }
 body {
   font-family: 'Times New Roman', Times, serif;
-  background-color: gray;
 }
 
 /*     start containers       */
@@ -54,6 +53,49 @@ ul {
 }
 
 /*    end global rules     */
+
+
+/*     start components       */
+.main-headeng {
+  text-align: center;
+}
+.main-headeng h2 {
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  position: relative;
+}
+.main-headeng h2::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 200px;
+  bottom: -30px;
+  background-color: #000;
+}
+.main-headeng h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -38px;
+  transform: translateX(-50%);
+  height: 16px;
+  width: 16px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.main-headeng p {
+  width: 550px;
+  max-width: 100%;
+  margin: 0 auto 100px;
+  line-height: 2;
+  color: #777;
+}
+/*     end components       */
 
 /*    start    header      */
 header {
