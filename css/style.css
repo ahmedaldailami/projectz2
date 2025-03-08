@@ -321,3 +321,69 @@ header nav .form i {
 }
 
 /*    end   services      */
+
+
+/*    start    design       */
+.design {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  height: 600px;
+  position: relative;
+  background: url("../images/ designb.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.design::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 50%);
+}
+.design .image, 
+.design .text {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+.design .image {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .design .image {
+    display: none;
+  }
+}
+.design .image img{
+  width: 20em;
+}
+.design .text{
+  color: #fff;
+  background-color: var(--transparent);
+  padding: 30px;
+}
+.design .text h2 {
+  font-weight: normal;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+.design .text ul li {
+  padding: 15px 0;
+}
+.design .text ul li i {
+  font-weight: 900;
+  margin-right: 20px;
+}
+
+
+/* .design .text ul li::before {
+  font-family: 'Font Awsome 5 Free';
+  content: '\f108';
+}  */
+
+
+/*    end   design       */
