@@ -352,6 +352,15 @@ header nav .form i {
 }
 .design .image {
   text-align: center;
+  opacity: 0.8;
+  transition: 0.3s ease
+}
+.design .image:hover {
+  text-align: center;
+  transform: 0.3s ease;
+  transform: scale(1.1);
+  opacity: 1;
+
 }
 @media (max-width: 767px) {
   .design .image {
@@ -378,12 +387,91 @@ header nav .form i {
   font-weight: 900;
   margin-right: 20px;
 }
-
-
+.design .text ul li:hover{
+  color: var(--main-color);
+}
 /* .design .text ul li::before {
   font-family: 'Font Awsome 5 Free';
   content: '\f108';
 }  */
 
-
 /*    end   design       */
+
+
+/*    start   portofolio       */
+.portofolio {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.portofolio .shuffle{
+  display: flex;
+  justify-content: center;
+}
+.portofolio .shuffle li{
+  padding: 10px;
+}
+.portofolio .shuffle li.active {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.portofolio .images-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+.portofolio .images-container .img-box {
+  position: relative;
+  overflow: hidden;
+}
+.portofolio .images-container .img-box:hover .caption {
+  bottom: 0;
+}
+.portofolio .images-container .img-box:hover img {
+  transform: rotate(3deg) scale(1.1)
+}
+@media (min-width:768px){
+  .portofolio .images-container .img-box {
+     flex-basis: 50%
+}
+
+}
+@media (min-width:1199px){
+  .portofolio .images-container .img-box {
+    flex-basis: 25%;
+}
+
+}
+.portofolio .images-container .img-box img {
+  width: 100%;
+  transition: 0.3s ease;
+}
+.portofolio .images-container .img-box .caption {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  transition: 0.3s ease;
+  bottom: -100%;
+}
+
+.portofolio .images-container .img-box .caption h4 {
+  font-weight: bold;
+  margin-bottom: 10px
+}
+.portofolio .images-container .img-box .caption p {
+  color: var(--main-color);
+}
+.portofolio .more {
+  background-color: var(--main-color);
+  color: #fff;
+  display: block;
+  padding: 15px 20px;
+  width: fit-content;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 30px auto;
+  
+}
+/*    end   portofolio       */
