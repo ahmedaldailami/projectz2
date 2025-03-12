@@ -521,3 +521,42 @@ header nav .form i {
   border: none;
 }
 /*    end   video        */
+
+/*    start   about         */
+.about {
+  padding-top: var(--section-padding);
+  overflow: hidden;
+  text-align: center;
+}
+.about img {
+  position: relative;
+  bottom: -120px;
+  max-width: 100%;
+  margin-top: -180px;
+}
+@media (max-width: 767px) {
+ .about img {
+   bottom: -50px;
+ }
+}
+/*    end   about         */
+
+/*    start    statistics          */
+.stats {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  position: relative;
+  text-align: center;
+  background-image: url("../images/stats.jpg");
+}
+.stats::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 70%);
+}
+
+/*    end   statistics          */
