@@ -475,3 +475,49 @@ header nav .form i {
   
 }
 /*    end   portofolio       */
+
+
+/*    start    video        */
+.video {
+  position: relative;
+}
+.video::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 70%);
+}
+.video video {
+  width: 100%;
+}
+
+.video .text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--transparent);
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+}
+.video .text h2{
+  font-weight: normal;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+.video .text p {
+  margin-bottom: 15px;
+}
+.video .text button{
+  background-color: #000;
+  color: #fff ;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: none;
+}
+/*    end   video        */
