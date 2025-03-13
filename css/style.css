@@ -602,6 +602,127 @@ header nav .form i {
 }
 .stats .box p {
   font-size: 14px;
-  text-transform: capitalize;
+  text-transform: capitalize; 
 }
 /*    end   statistics          */
+
+/*    start    skills-and-testimonials          */
+.skills-and-testimonials {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.skills-and-testimonials .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .skills-and-testimonials .container {
+    justify-content: space-between;
+  }
+  .skills-and-testimonials .container > div {
+    flex-basis: 45%;
+  }
+
+}
+.skills-and-testimonials .container > div > h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.skills-and-testimonials .container > div > p {
+  line-height: 1.8;
+  color: #777;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.skills-and-testimonials .testimonials .box {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.skills-and-testimonials .testimonials .box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+@media (max-width:767px) {
+  .skills-and-testimonials .testimonials .box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .skills-and-testimonials .testimonials .box img {
+    margin: 0 auto 20px;
+  }
+}
+.skills-and-testimonials .testimonials .box .text {
+  line-height: 1.6;
+  border-bottom: 1px solid #ccc;
+}
+.skills-and-testimonials .testimonials .box .text p{
+  font-size: 14px;
+  color: #777;
+  text-align: right;
+  margin-bottom: 10px;
+}
+.skills-and-testimonials .bullets {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.skills-and-testimonials .bullets li {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.skills-and-testimonials .bullets li.active {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.skills-and-testimonials .skills {
+}
+.skills-and-testimonials .skills .prog-holder {
+  margin-bottom: 40px;
+}
+.skills-and-testimonials .skills .prog-holder h4 {
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.skills-and-testimonials .skills .prog-holder .prog {
+  background-color: #dedadc;
+  height: 30px;
+}
+.skills-and-testimonials .skills .prog-holder .prog span{
+  display: block;
+  background-color: var(--main-color);
+  height: 30px;
+  position: relative;
+}
+.skills-and-testimonials .skills .prog-holder .prog span::before{
+  content: attr(data-progress);
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  top: -40px;
+  right: -15px;
+  padding: 4px 0;
+  width: 40px;
+  text-align: center;
+  border-radius: 5px;
+}
+.skills-and-testimonials .skills .prog-holder .prog span::after {
+  content: '';
+  border: solid 8px transparent ;
+  border-top-color: #000;
+  position: absolute;
+  top: -10px;
+  right: -8px;
+}
+/*    end   skills-and-testimonials          */
