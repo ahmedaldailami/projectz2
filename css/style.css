@@ -840,3 +840,77 @@ header nav .form i {
   margin: 30px auto;
 }
 /*         end pricing        */
+
+
+/*       start  subscribe     */
+.sub {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-image: url("../images/stats.jpg");
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.sub::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 70%);
+}
+.sub .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .sub .container {
+    flex-direction: column;
+  }
+}
+.sub .container form {
+  display: flex;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+}
+.sub form i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+}
+.sub form input[type="email"]{
+  border: 1px solid #fff ;
+  border-right: none;
+  background: none;
+  padding: 20px 20px 20px 60px;
+  width: calc(100% - 130px);
+  caret-color: var(--main-color);
+  outline: none;
+}
+.sub form input[type="submit"]{
+  border: 1px solid #fff ;
+  border-left: none;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px 20px;
+  width: 130px;
+  text-transform: uppercase;
+}
+.sub form ::placeholder{
+  color: #fff;
+}
+.sub p{
+  line-height: 2;
+  margin-left: 50px
+}
+@media (max-width: 991px) {
+  .sub p {
+    margin: 20px 0;
+  }
+}
+/*       end   subscribe     */
