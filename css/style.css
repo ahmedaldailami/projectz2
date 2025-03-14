@@ -618,7 +618,7 @@ header nav .form i {
 }
 @media (min-width: 992px) {
   .skills-and-testimonials .container {
-    justify-content: space-between;
+    justify-content: space-between; 
   }
   .skills-and-testimonials .container > div {
     flex-basis: 45%;
@@ -726,3 +726,117 @@ header nav .form i {
   right: -8px;
 }
 /*    end   skills-and-testimonials          */
+/*         start quote        */
+.quote {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-image: url("../images/stats.jpg");
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.quote::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 70%);
+}
+.quote .container {
+  position: relative;
+}
+.quote q {
+  font-size: 30px;
+  margin-bottom: 20px;
+  display: block;
+}
+/*         end quote        */
+
+
+/*         start pricing        */
+.pricing {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.pricing .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(250px, 1fr));
+  gap: 30px;
+}
+.pricing .plans .plan {
+  background-color: #fcfcfc;
+  text-align: center;
+}
+.pricing .plans .plan .head{
+  padding: 40px 20px;
+  border-bottom: 1px solid var(--main-color);
+  border-top: 1px solid var(--main-color);
+}
+.pricing .plans .plan .head h3 {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.pricing .plans .plan .head span {
+  font-size: 60px; 
+  font-weight: bold;
+}
+.pricing .plans .plan .head span::before {
+  content: '$';
+  font-size: 20px;
+  font-weight: normal;
+  position: relative;
+  top: -45px;
+  margin-right: 15px;
+}
+.pricing .plans .plan .head span::after {
+  content: '/Mo';
+  font-size: 20px;
+  position: relative;
+  right: -15px;
+}
+.pricing .plans .plan ul {
+  border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans .plan ul li {
+  padding: 20px;
+  position: relative;
+  text-transform: capitalize;
+}
+.pricing .plans .plan ul li:not(:last-child)::after {
+  content: '';
+  height: 1px;
+  width: 150px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pricing .plans .foot a {
+  display: block;
+  text-decoration: none;
+  border: 1px solid var(--main-color);
+  padding: 15px 20px;
+  width: fit-content;
+  margin: 30px auto;
+}
+.pricing .con-txt {
+  font-size: 20px;
+  text-align: center;
+  margin: 40px auto 20px;
+  text-transform: capitalize;
+}
+.pricing .con-link {
+  display: block;
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 15px 20px;
+  width: fit-content;
+  margin: 30px auto;
+}
+/*         end pricing        */
